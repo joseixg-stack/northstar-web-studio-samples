@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample | Kumo Guesthouse</title>
+  <style>
+    :root{--ink:#1f2937;--muted:#667085;--line:#e3e8ef;--paper:#fff;--soft:#f5f7f4;--accent:#0f766e;--sun:#d97706}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:var(--soft);line-height:1.7}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+    nav{max-width:1120px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;gap:18px;align-items:center}
+    nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:14px}
+    .hero{min-height:74vh;color:white;background:linear-gradient(180deg,rgba(16,24,40,.12),rgba(16,24,40,.76)),url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80") center/cover;display:grid;align-items:end;padding:72px 20px 56px}
+    .wrap{max-width:1120px;margin:auto;width:100%}
+    h1{font-size:clamp(36px,7vw,74px);line-height:1.06;margin:0 0 18px;letter-spacing:0;max-width:900px}
+    h2{font-size:clamp(26px,4vw,38px);margin:0 0 18px;line-height:1.18}
+    h3{margin:0 0 8px}
+    p{margin:0 0 14px}
+    .lead{font-size:18px;color:#eef2f7;max-width:760px}
+    .btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;border-radius:6px;padding:13px 18px;font-weight:900;margin-top:18px}
+    section{padding:62px 20px;background:white;border-bottom:1px solid var(--line)}
+    section.alt{background:var(--soft)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:white;border:1px solid var(--line);border-radius:8px;padding:22px}
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+    .photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+    .price{font-size:34px;font-weight:900;color:var(--sun)}
+    .kicker{display:inline-block;color:var(--accent);font-weight:900;margin-bottom:12px;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+    footer{background:#12332f;color:#d8e7e4;padding:32px 20px}
+    @media(max-width:820px){.grid,.split{grid-template-columns:1fr}nav{flex-direction:column;align-items:flex-start}nav a{margin-left:0;margin-right:14px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>Kumo Guesthouse</strong>
+      <div><a href="#rooms">Rooms</a><a href="#area">Area</a><a href="#booking">Booking</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="kicker">Kyoto guesthouse sample</span>
+        <h1>京都の小さな町家で、静かな一泊を。</h1>
+        <p class="lead">観光地まで歩ける立地と、落ち着いた和室。日本語・中文で宿泊案内を整理した民宿向けの紹介ページです。</p>
+        <a class="btn" href="#booking">空室を相談する</a>
+      </div>
+    </section>
+    <section id="rooms">
+      <div class="wrap">
+        <span class="kicker">Rooms</span>
+        <h2>料金と部屋タイプがすぐ分かる。</h2>
+        <div class="grid">
+          <div class="card"><h3>Standard</h3><p>1-2名向け。観光中心の短期滞在に。</p><div class="price">¥9,800〜</div></div>
+          <div class="card"><h3>Family</h3><p>3-4名向け。家族旅行や友人旅行に。</p><div class="price">¥16,800〜</div></div>
+          <div class="card"><h3>Long Stay</h3><p>7泊以上の相談に対応。清掃回数も調整可能。</p><div class="price">相談</div></div>
+        </div>
+      </div>
+    </section>
+    <section class="alt" id="area">
+      <div class="wrap split">
+        <div>
+          <span class="kicker">Area</span>
+          <h2>地図・アクセス・注意事項を一枚で整理。</h2>
+          <p>民宿や短租服务最容易被反复询问的问题，是交通、入住时间、价格、联系方式。这个样品把这些内容集中到一页，让客户能直接咨询。</p>
+          <p>适合日本民宿、地方体验、短租房东、中文游客接待服务。</p>
+        </div>
+        <img class="photo" src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80" alt="京都街道">
+      </div>
+    </section>
+    <section id="booking">
+      <div class="wrap">
+        <span class="kicker">Booking</span>
+        <h2>文字で予約相談できます。</h2>
+        <p>チェックイン日、人数、希望部屋タイプを送るだけ。電話なしで問い合わせ導線を作れます。</p>
+        <a class="btn" href="mailto:sample@example.com?subject=Kumo%20Guesthouse%20宿泊相談">メールで相談する</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">Sample website by Northstar Web Studio</div></footer>
+</body>
+</html>

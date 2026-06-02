@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample | AOI Hair Salon</title>
+  <style>
+    :root{--ink:#202124;--muted:#667085;--line:#e4e7ec;--paper:#fff;--soft:#f7f5f1;--accent:#b7791f;--deep:#1f3a37}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:var(--soft);line-height:1.7}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+    nav{max-width:1120px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+    nav strong{font-size:18px;color:var(--deep)}
+    nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:14px}
+    .hero{min-height:76vh;display:grid;align-items:end;color:white;background:linear-gradient(180deg,rgba(20,28,32,.10),rgba(20,28,32,.78)),url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1800&q=80") center/cover;padding:76px 20px 56px}
+    .wrap{max-width:1120px;margin:auto;width:100%}
+    h1{font-size:clamp(38px,7vw,76px);line-height:1.05;margin:0 0 18px;letter-spacing:0;max-width:860px}
+    h2{font-size:clamp(26px,4vw,38px);line-height:1.18;margin:0 0 18px;letter-spacing:0}
+    h3{margin:0 0 8px;font-size:20px}
+    p{margin:0 0 14px}
+    .lead{font-size:18px;max-width:680px;color:#f3f4f6}
+    .btn{display:inline-block;background:var(--accent);color:white;text-decoration:none;font-weight:800;padding:13px 18px;border-radius:6px;margin-top:18px}
+    section{padding:64px 20px;background:var(--paper);border-bottom:1px solid var(--line)}
+    section.alt{background:var(--soft)}
+    .split{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:white;border:1px solid var(--line);border-radius:8px;padding:22px}
+    .photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px}
+    .kicker{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+    .price{font-size:30px;font-weight:900;color:var(--deep)}
+    .note{color:var(--muted);font-size:14px}
+    .hours{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:18px}
+    .hours div{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:14px}
+    footer{padding:34px 20px;background:var(--deep);color:#dbe4e2}
+    @media(max-width:820px){.split,.grid,.hours{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}nav a{margin-left:0;margin-right:14px}.hero{min-height:68vh}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>AOI Hair Salon</strong>
+      <div><a href="#concept">Concept</a><a href="#menu">Menu</a><a href="#reserve">Reserve</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="kicker">Tokyo private hair salon</span>
+        <h1>静かな空間で、毎日扱いやすい髪へ。</h1>
+        <p class="lead">表参道エリアの小さなプライベートサロン。髪質・生活リズム・雰囲気に合わせて、自然に続くスタイルをご提案します。</p>
+        <a class="btn" href="#reserve">予約・相談する</a>
+      </div>
+    </section>
+    <section id="concept">
+      <div class="wrap split">
+        <div>
+          <span class="kicker">Concept</span>
+          <h2>初めてでも相談しやすい、1席だけのヘアサロン。</h2>
+          <p>施術前のカウンセリングを丁寧に行い、派手すぎないけれど印象が整うスタイルを一緒に作ります。仕事帰りや週末にも通いやすい、落ち着いた空間です。</p>
+          <div class="hours">
+            <div><strong>Open</strong><br>10:00 - 20:00</div>
+            <div><strong>Closed</strong><br>Monday</div>
+          </div>
+        </div>
+        <img class="photo" src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=1200&q=80" alt="落ち着いた美容室の内装">
+      </div>
+    </section>
+    <section class="alt" id="menu">
+      <div class="wrap">
+        <span class="kicker">Menu</span>
+        <h2>人気メニュー</h2>
+        <div class="grid">
+          <div class="card"><h3>Cut</h3><p>骨格と髪質に合わせた再現しやすいカット。</p><div class="price">¥4,800</div></div>
+          <div class="card"><h3>Color</h3><p>肌色に馴染む自然なカラー。白髪ぼかしも対応。</p><div class="price">¥7,800〜</div></div>
+          <div class="card"><h3>Treatment</h3><p>乾燥や広がりを整える集中ケア。</p><div class="price">¥3,500〜</div></div>
+        </div>
+      </div>
+    </section>
+    <section id="reserve">
+      <div class="wrap split">
+        <div>
+          <span class="kicker">Reserve</span>
+          <h2>予約はメールまたはフォームで完結。</h2>
+          <p>電話が苦手な方でも、希望日時・メニュー・髪のお悩みを送るだけで予約相談できます。</p>
+          <p class="note">このページは Northstar Web Studio のサンプルです。実店舗ではありません。</p>
+          <a class="btn" href="mailto:sample@example.com?subject=AOI%20Hair%20Salon%20予約相談">メールで相談する</a>
+        </div>
+        <img class="photo" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=80" alt="ヘアカットの様子">
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">Sample website by Northstar Web Studio</div></footer>
+</body>
+</html>

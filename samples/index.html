@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Northstar Web Studio | 作品样品集</title>
+  <style>
+    :root{--ink:#172033;--muted:#667085;--line:#d8e0ea;--paper:#fff;--soft:#f6f8fb;--accent:#0f766e;--blue:#2563eb}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,"Microsoft YaHei","Hiragino Kaku Gothic ProN",sans-serif;color:var(--ink);background:var(--soft);line-height:1.7}
+    header{background:white;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+    nav{max-width:1160px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;gap:18px;align-items:center}
+    nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:14px}
+    .hero{padding:72px 20px 46px;background:#101828;color:white}
+    .wrap{max-width:1160px;margin:auto;width:100%}
+    h1{font-size:clamp(36px,6vw,66px);line-height:1.08;margin:0 0 18px;letter-spacing:0;max-width:900px}
+    h2{font-size:clamp(26px,4vw,38px);line-height:1.18;margin:0 0 18px}
+    h3{margin:0 0 8px}
+    p{margin:0 0 14px}
+    .lead{font-size:18px;max-width:760px;color:#dbe4f0}
+    section{padding:56px 20px;background:white;border-bottom:1px solid var(--line)}
+    section.alt{background:var(--soft)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .sample{display:block;background:white;border:1px solid var(--line);border-radius:8px;overflow:hidden;text-decoration:none;color:var(--ink)}
+    .sample img{width:100%;height:176px;object-fit:cover;display:block}
+    .sample div{padding:18px}
+    .sample p{color:var(--muted)}
+    .tag{display:inline-block;background:#ecfdf3;color:#047857;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:800;margin-bottom:10px}
+    .service{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:20px}
+    .price{font-size:30px;font-weight:900;color:var(--blue)}
+    footer{background:#101828;color:#cbd5e1;padding:30px 20px}
+    @media(max-width:900px){.grid{grid-template-columns:1fr}nav{flex-direction:column;align-items:flex-start}nav a{margin-left:0;margin-right:14px}}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>Northstar Web Studio</strong>
+      <div><a href="#websites">网站样品</a><a href="#apps">APP样品</a><a href="#packages">报价</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <span class="tag">Portfolio Samples</span>
+        <h1>中文 / 日本語対応的网站和轻量 APP 样品。</h1>
+        <p class="lead">这些样品用于展示我们能交付的页面结构、行业场景和文字沟通流程。适合小店、课程、咨询、民宿和小团队接单管理。</p>
+      </div>
+    </section>
+    <section id="websites">
+      <div class="wrap">
+        <h2>最适合第一批客户的网站样品</h2>
+        <div class="grid">
+          <a class="sample" href="jp-salon-site.html"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=80" alt="美容室"><div><span class="tag">日本小店</span><h3>日语美容室一页官网</h3><p>菜单、价格、营业时间、预约入口，适合美容室/美甲/整体店。</p></div></a>
+          <a class="sample" href="cn-course-landing.html"><img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=900&q=80" alt="课程"><div><span class="tag">中文课程</span><h3>日语课程报名落地页</h3><p>适合课程、咨询、留学服务，把朋友圈流量转成咨询。</p></div></a>
+          <a class="sample" href="cn-consulting-page.html"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80" alt="咨询"><div><span class="tag">咨询服务</span><h3>留学签证咨询页</h3><p>服务范围、流程、费用和预约入口集中在一页。</p></div></a>
+          <a class="sample" href="jp-guesthouse-site.html"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80" alt="民宿"><div><span class="tag">中日双语</span><h3>民宿/短租介绍页</h3><p>适合民宿、地方体验和中文游客接待服务。</p></div></a>
+        </div>
+      </div>
+    </section>
+    <section class="alt" id="apps">
+      <div class="wrap">
+        <h2>升级服务样品</h2>
+        <div class="grid">
+          <a class="sample" href="app-dashboard-demo.html"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="看板"><div><span class="tag">轻量 APP</span><h3>小团队订单看板</h3><p>适合已经有客户流程的小团队，管理咨询、报价、制作和交付。</p></div></a>
+          <div class="service"><h3>为什么 APP 放后面</h3><p>APP 单价更高，但沟通成本也高。第一阶段先用网站样品拿成交和评价，之后再把看板作为加价服务。</p></div>
+          <div class="service"><h3>文字沟通流程</h3><p>客户填写资料表，我们做初稿，客户用文字列修改点。低价套餐不需要电话会议。</p></div>
+        </div>
+      </div>
+    </section>
+    <section id="packages">
+      <div class="wrap">
+        <h2>首批低价套餐</h2>
+        <div class="grid">
+          <div class="service"><h3>中文单页落地页</h3><p>1页、手机适配、1次小修改、3天交付。</p><div class="price">RMB 499 起</div></div>
+          <div class="service"><h3>日本語 LP</h3><p>1ページ、スマホ対応、修正1回、3日納品。</p><div class="price">JPY 9,800 起</div></div>
+          <div class="service"><h3>页面诊断</h3><p>只做结构和文案建议，24小时内交付。</p><div class="price">RMB 199 / JPY 5,000</div></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap">Northstar Web Studio | sample portfolio</div></footer>
+</body>
+</html>

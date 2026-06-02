@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>样品 | 小团队订单看板 APP</title>
+  <style>
+    :root{--ink:#172033;--muted:#667085;--line:#d6dde8;--paper:#fff;--soft:#eef3f8;--blue:#2563eb;--green:#059669;--amber:#b45309}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;background:var(--soft);color:var(--ink)}
+    .app{display:grid;grid-template-columns:248px 1fr;min-height:100vh}
+    aside{background:#101828;color:white;padding:24px 18px}
+    aside h1{font-size:20px;margin:0 0 26px}
+    aside a{display:block;color:#cbd5e1;text-decoration:none;padding:11px 10px;border-radius:6px;margin:4px 0}
+    aside a.active{background:#2563eb;color:white}
+    main{padding:28px}
+    .top{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:22px}
+    h2{font-size:30px;margin:0 0 6px;letter-spacing:0}
+    h3{margin:0 0 12px}
+    p{margin:0;color:var(--muted);line-height:1.6}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:20px}
+    .card,.col{background:white;border:1px solid var(--line);border-radius:8px}
+    .card{padding:18px}
+    .metric{font-size:32px;font-weight:900;color:#111827;margin-top:8px}
+    .board{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .col{padding:15px;min-height:370px}
+    .task{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:6px;padding:13px;margin:10px 0}
+    .task.green{border-left-color:var(--green)}
+    .task.amber{border-left-color:var(--amber)}
+    .task strong{display:block;margin-bottom:5px}
+    .pill{display:inline-block;background:#dbeafe;color:#1d4ed8;border-radius:999px;padding:3px 8px;font-size:12px;margin-bottom:8px}
+    .pill.green{background:#d1fae5;color:#047857}
+    .pill.amber{background:#fef3c7;color:#92400e}
+    button{border:0;background:#2563eb;color:white;padding:11px 15px;border-radius:6px;font-weight:800}
+    @media(max-width:980px){.app{grid-template-columns:1fr}aside{position:static}.grid,.board{grid-template-columns:1fr}.top{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside>
+      <h1>OrderBoard</h1>
+      <a class="active" href="#">订单看板</a>
+      <a href="#">客户</a>
+      <a href="#">报价</a>
+      <a href="#">设置</a>
+    </aside>
+    <main>
+      <div class="top">
+        <div>
+          <h2>小团队订单看板</h2>
+          <p>适合工作室、课程顾问、维修团队、设计接单团队，把咨询、报价、制作、交付放在一页管理。</p>
+        </div>
+        <button>新增订单</button>
+      </div>
+      <div class="grid">
+        <div class="card"><span>本周咨询</span><div class="metric">18</div></div>
+        <div class="card"><span>待报价</span><div class="metric">7</div></div>
+        <div class="card"><span>制作中</span><div class="metric">5</div></div>
+        <div class="card"><span>预计收入</span><div class="metric">RMB 12,400</div></div>
+      </div>
+      <div class="board">
+        <div class="col">
+          <h3>新咨询</h3>
+          <div class="task"><span class="pill">需要报价</span><strong>日语课程落地页</strong><p>客户需要一页报名页面，含课程介绍、价格和咨询入口。</p></div>
+          <div class="task"><span class="pill">资料待补</span><strong>美容室一页官网</strong><p>需要菜单、地址、预约方式和三张店铺照片。</p></div>
+        </div>
+        <div class="col">
+          <h3>制作中</h3>
+          <div class="task green"><span class="pill green">首屏完成</span><strong>清洁公司官网</strong><p>首页结构已完成，等待客户确认服务范围。</p></div>
+          <div class="task green"><span class="pill green">测试中</span><strong>报价表单工具</strong><p>字段和邮件通知正在检查，准备交付。</p></div>
+        </div>
+        <div class="col">
+          <h3>待交付</h3>
+          <div class="task amber"><span class="pill amber">QA</span><strong>民宿介绍页</strong><p>移动端、地图链接、联系方式已检查。</p></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
