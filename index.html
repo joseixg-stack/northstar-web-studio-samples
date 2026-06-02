@@ -3,159 +3,292 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Northstar Web Studio | 中文 / 日本語一页网站制作</title>
+  <title>Northstar Web Studio | 中文 / 日本語一页网站制作作品集</title>
   <style>
-    :root{--ink:#101828;--muted:#667085;--line:#e4e7ec;--paper:#fff;--soft:#f7f8fb;--teal:#0f766e;--blue:#2563eb;--gold:#d97706;--rose:#be123c}
+    :root{
+      --ink:#111827;--muted:#667085;--line:#d0d5dd;--paper:#fff;--soft:#f6f8fb;
+      --teal:#0f766e;--blue:#2563eb;--gold:#b45309;--rose:#be123c;--green:#047857;
+      --shadow:0 18px 48px rgba(17,24,39,.12)
+    }
     *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,"Microsoft YaHei","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:var(--soft);line-height:1.65}
-    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
-    nav{max-width:1180px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}
-    nav strong{font-size:17px}
-    nav a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:14px}
-    .hero{padding:64px 20px 38px;background:radial-gradient(circle at 80% 20%,#dbeafe 0,#f8fafc 30%,#fff 62%)}
-    .wrap{max-width:1180px;margin:auto;width:100%}
-    .hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:34px;align-items:center}
-    .eyebrow{display:inline-flex;align-items:center;gap:8px;background:#ecfdf3;color:#047857;border:1px solid #bbf7d0;border-radius:999px;padding:6px 11px;font-size:13px;font-weight:800;margin-bottom:18px}
-    h1{font-size:clamp(36px,5vw,60px);line-height:1.05;margin:0 0 18px;letter-spacing:0;max-width:680px}
-    h2{font-size:clamp(27px,4vw,42px);line-height:1.15;margin:0 0 14px;letter-spacing:0}
-    h3{margin:0 0 8px;font-size:20px}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Arial,"Microsoft YaHei","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:var(--soft);line-height:1.62;overflow-x:hidden}
+    a{color:inherit}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+    nav{max-width:1200px;margin:auto;padding:13px 20px;display:flex;justify-content:space-between;align-items:center;gap:18px}
+    nav strong{font-size:17px;white-space:nowrap}
+    nav a{text-decoration:none;margin-left:18px;font-size:14px;color:#344054}
+    .wrap{max-width:1200px;margin:auto;width:100%}
+    .hero{background:linear-gradient(180deg,#fff,#f7f9fc);padding:54px 20px 34px;border-bottom:1px solid var(--line)}
+    .hero-grid{display:grid;grid-template-columns:.94fr 1.06fr;gap:34px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #bbf7d0;background:#ecfdf3;color:#047857;border-radius:999px;padding:6px 11px;font-size:13px;font-weight:800;margin-bottom:18px}
+    h1{font-size:clamp(34px,5vw,58px);line-height:1.06;letter-spacing:0;margin:0 0 16px;max-width:720px;overflow-wrap:anywhere;word-break:normal}
+    h2{font-size:clamp(26px,3.5vw,40px);line-height:1.15;letter-spacing:0;margin:0 0 14px}
+    h3{font-size:20px;margin:0 0 8px}
     p{margin:0 0 14px}
-    .lead{font-size:19px;color:#344054;max-width:760px}
+    .lead{font-size:18px;color:#344054;max-width:760px}
     .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
-    .btn{display:inline-flex;align-items:center;justify-content:center;background:var(--ink);color:white;text-decoration:none;font-weight:900;border-radius:7px;padding:13px 18px}
-    .btn.alt{background:white;color:var(--ink);border:1px solid var(--line)}
-    .proof{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;max-width:720px}
-    .proof div{background:white;border:1px solid var(--line);border-radius:8px;padding:13px}
-    .proof strong{display:block;font-size:20px}
-    .showcase{position:relative;min-height:500px}
-    .browser{background:white;border:1px solid #d0d5dd;border-radius:14px;box-shadow:0 24px 70px rgba(16,24,40,.16);overflow:hidden}
-    .bar{height:34px;background:#f2f4f7;border-bottom:1px solid #d0d5dd;display:flex;align-items:center;gap:7px;padding:0 13px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:12px 17px;border-radius:7px;border:1px solid var(--ink);background:var(--ink);color:white;text-decoration:none;font-weight:900;cursor:pointer}
+    .btn.alt{background:white;color:var(--ink);border-color:var(--line)}
+    .btn.teal{background:var(--teal);border-color:var(--teal)}
+    .micro{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px;max-width:720px}
+    .micro div{background:white;border:1px solid var(--line);border-radius:8px;padding:12px}
+    .micro strong{display:block;font-size:21px}
+    .stage{position:relative;min-height:520px}
+    .desktop{background:white;border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
+    .windowbar{height:34px;background:#f2f4f7;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:7px;padding:0 13px}
     .dot{width:9px;height:9px;border-radius:50%;background:#f87171}.dot:nth-child(2){background:#fbbf24}.dot:nth-child(3){background:#34d399}
-    .preview-hero{height:170px;background:linear-gradient(135deg,rgba(15,118,110,.85),rgba(16,24,40,.68)),url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80") center/cover;color:white;padding:24px}
-    .preview-hero b{font-size:31px;line-height:1.05;display:block;max-width:360px}
-    .preview-body{padding:18px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-    .mini-card{border:1px solid var(--line);border-radius:8px;padding:12px;background:#fff}
-    .mini-card span{display:block;color:var(--muted);font-size:12px}.mini-card strong{font-size:23px}
-    .phone{position:absolute;right:8px;bottom:0;width:190px;background:#111827;border:7px solid #111827;border-radius:28px;box-shadow:0 22px 55px rgba(16,24,40,.22);overflow:hidden}
-    .phone-screen{background:white;min-height:340px;border-radius:20px;overflow:hidden}
-    .phone-visual{height:125px;background:url("https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=500&q=80") center/cover}
-    .phone-text{padding:14px}.phone-text b{font-size:18px;line-height:1.1;display:block}.phone-line{height:9px;border-radius:999px;background:#e5e7eb;margin-top:10px}.phone-line.short{width:64%}
-    section{padding:58px 20px;background:white;border-top:1px solid var(--line)}
+    .screen{display:grid;grid-template-columns:1fr 1fr;min-height:386px}
+    .screen-visual{background:url("assets/case-salon-desktop.png") top center/cover}
+    .screen-copy{padding:26px;background:#101828;color:white;display:flex;flex-direction:column;justify-content:space-between}
+    .screen-copy span{display:inline-block;width:max-content;background:#fef3c7;color:#92400e;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:900;margin-bottom:14px}
+    .screen-copy b{font-size:32px;line-height:1.08;display:block}
+    .screen-copy p{color:#d0d5dd}
+    .phone{position:absolute;right:12px;bottom:0;width:190px;background:#101828;border:7px solid #101828;border-radius:28px;box-shadow:0 24px 58px rgba(17,24,39,.22);overflow:hidden}
+    .phone img{display:block;width:100%;height:338px;object-fit:cover;object-position:top;border-radius:20px}
+    section{padding:58px 20px;background:white;border-bottom:1px solid var(--line)}
     section.alt{background:var(--soft)}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:22px}
+    .section-head p{max-width:680px;color:var(--muted)}
+    .filters{display:flex;gap:8px;flex-wrap:wrap}
+    .chip{border:1px solid var(--line);background:white;border-radius:999px;padding:8px 12px;font-weight:800;color:#344054;cursor:pointer}
+    .chip.active{background:#111827;color:white;border-color:#111827}
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .case{display:block;text-decoration:none;color:var(--ink);background:white;border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
-    .case:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(16,24,40,.10)}
-    .case-img{height:190px;background-size:cover;background-position:center;position:relative}
-    .case-img:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.34))}
-    .case-body{padding:18px}
-    .tag{display:inline-block;background:#eef4ff;color:#3538cd;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:800;margin-bottom:10px}
+    .case{background:white;border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 1px 0 rgba(17,24,39,.03);display:flex;flex-direction:column}
+    .case.hide{display:none}
+    .case-shot{height:210px;background:#f2f4f7;overflow:hidden;border-bottom:1px solid var(--line)}
+    .case-shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .25s ease}
+    .case:hover .case-shot img{transform:scale(1.035)}
+    .case-body{padding:18px;display:flex;flex-direction:column;gap:9px;flex:1}
+    .tag{display:inline-block;width:max-content;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:900;background:#eef4ff;color:#3538cd}
     .tag.jp{background:#fff7ed;color:#b45309}.tag.cn{background:#ecfdf3;color:#047857}.tag.app{background:#fdf2f8;color:#be123c}
-    .case p,.package p,.step p{color:var(--muted)}
-    .package,.step{background:white;border:1px solid var(--line);border-radius:10px;padding:22px}
-    .price{font-size:34px;font-weight:950;color:var(--blue);letter-spacing:0}
-    .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    .quote{background:#101828;color:white;border-radius:12px;padding:28px}
-    .quote p{color:#d0d5dd}
-    footer{background:#101828;color:#cbd5e1;padding:32px 20px}
-    @media(max-width:920px){.hero-grid,.grid,.split,.proof{grid-template-columns:1fr}.showcase{min-height:auto}.phone{position:relative;right:auto;margin:18px auto 0}.preview-body{grid-template-columns:1fr}nav{flex-direction:column;align-items:flex-start}nav a{margin-left:0;margin-right:14px}}
+    .case p,.package p,.qa p,.cover p{color:var(--muted)}
+    .case-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:auto}
+    .smallbtn{border:1px solid var(--line);background:white;border-radius:7px;padding:9px 11px;text-decoration:none;font-weight:900;font-size:14px;cursor:pointer}
+    .smallbtn.dark{background:#111827;color:white;border-color:#111827}
+    .packages{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .package{background:white;border:1px solid var(--line);border-radius:8px;padding:22px}
+    .price{font-size:34px;font-weight:950;color:var(--blue);letter-spacing:0;margin:8px 0}
+    .package ul,.detail ul{margin:14px 0 0;padding-left:18px;color:#344054}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:step}
+    .step{background:white;border:1px solid var(--line);border-radius:8px;padding:18px}
+    .step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#111827;color:white;font-weight:900;margin-bottom:12px}
+    .covers{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;align-items:start}
+    .cover{background:white;border:1px solid var(--line);border-radius:8px;padding:18px}
+    .cover img{width:100%;border:1px solid var(--line);border-radius:7px;display:block;background:#f2f4f7}
+    .cover-list{display:grid;gap:12px}
+    .qa{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .qa div{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:18px}
+    .sticky-cta{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:60;background:rgba(17,24,39,.94);color:white;border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:12px;box-shadow:0 18px 52px rgba(17,24,39,.25)}
+    .sticky-cta span{font-weight:900;white-space:nowrap}
+    .sticky-cta a{background:white;color:#111827;border-radius:7px;padding:10px 12px;text-decoration:none;font-weight:900;flex:0 0 auto}
+    dialog{border:0;border-radius:8px;padding:0;width:min(760px,calc(100vw - 28px));box-shadow:0 30px 90px rgba(17,24,39,.28)}
+    dialog::backdrop{background:rgba(17,24,39,.52)}
+    .modal-head{display:flex;justify-content:space-between;gap:12px;padding:18px 20px;border-bottom:1px solid var(--line)}
+    .modal-head button{border:1px solid var(--line);background:white;border-radius:7px;width:36px;height:36px;font-weight:900;cursor:pointer}
+    .detail{padding:20px}
+    .detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .detail-box{border:1px solid var(--line);border-radius:8px;padding:14px;background:#f8fafc}
+    footer{background:#101828;color:#cbd5e1;padding:34px 20px;margin-bottom:74px}
+    @media(max-width:960px){
+      .hero-grid,.grid,.packages,.process,.covers,.qa,.detail-grid,.screen{grid-template-columns:1fr}
+      .stage{min-height:auto}.phone{position:relative;right:auto;margin:16px auto 0}.screen-visual{min-height:260px}
+      .section-head{display:block}.filters{margin-top:14px}nav{align-items:flex-start;flex-direction:column}nav a{margin-left:0;margin-right:14px}
+      .sticky-cta{width:calc(100vw - 20px);justify-content:space-between}.sticky-cta span{font-size:13px;white-space:normal;line-height:1.25;flex:1}
+    }
+    @media(max-width:520px){h1{font-size:31px;line-height:1.12;word-break:break-all}.lead{font-size:16px;word-break:break-all}.wrap{max-width:100%;overflow:hidden}.micro{grid-template-columns:1fr}.hero{padding-top:34px}.sticky-cta a{padding:9px 10px}.sticky-cta span{white-space:normal}.actions .btn{width:100%}}
   </style>
 </head>
 <body>
   <header>
     <nav>
       <strong>Northstar Web Studio</strong>
-      <div><a href="#cases">作品</a><a href="#packages">价格</a><a href="#flow">流程</a><a href="#contact">联系</a></div>
+      <div><a href="#cases">作品</a><a href="#packages">价格</a><a href="#covers">封面</a><a href="#contact">联系</a></div>
     </nav>
   </header>
+
   <main>
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
           <span class="eyebrow">中文 / 日本語対応 · 文字沟通 · 3天初稿</span>
-          <h1>让客户从朋友圈/Instagram，进入能直接咨询的一页官网。</h1>
-          <p class="lead">适合小店、课程、咨询、民宿和在日华人服务。你提供服务内容、价格和联系方式，我们整理成手机上清楚、能预约、能报名的一页网站。</p>
+          <h1>让客户从社媒进入<br>能直接咨询的一页官网。</h1>
+          <p class="lead">给小店、课程、咨询和民宿做一页启动页。整理服务、价格、流程和咨询入口，手机上清楚好看。</p>
           <div class="actions">
-            <a class="btn" href="#cases">查看作品案例</a>
-            <a class="btn alt" href="#contact">发需求询价</a>
+            <a class="btn" href="#cases">查看可售案例</a>
+            <a class="btn alt" href="#covers">看平台封面</a>
           </div>
-          <div class="proof">
-            <div><strong>3天</strong>初稿交付</div>
-            <div><strong>1页</strong>先上线验证</div>
+          <div class="micro">
+            <div><strong>3天</strong>资料齐后出初稿</div>
+            <div><strong>1页</strong>先上线验证咨询</div>
             <div><strong>文字</strong>不用电话会议</div>
           </div>
         </div>
-        <div class="showcase" aria-label="作品预览">
-          <div class="browser">
-            <div class="bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
-            <div class="preview-hero"><b>小店预约页 / 课程报名页 / 咨询服务页</b></div>
-            <div class="preview-body">
-              <div class="mini-card"><span>服务菜单</span><strong>清楚展示</strong></div>
-              <div class="mini-card"><span>价格与流程</span><strong>少解释</strong></div>
-              <div class="mini-card"><span>咨询入口</span><strong>能预约</strong></div>
-              <div class="mini-card"><span>手机适配</span><strong>先上线</strong></div>
-            </div>
-          </div>
-          <div class="phone">
-            <div class="phone-screen">
-              <div class="phone-visual"></div>
-              <div class="phone-text">
-                <b>京都民宿介绍页</b>
-                <div class="phone-line"></div><div class="phone-line short"></div>
-                <div class="phone-line"></div><div class="phone-line short"></div>
+        <div class="stage">
+          <div class="desktop">
+            <div class="windowbar"><i class="dot"></i><i class="dot"></i><i class="dot"></i></div>
+            <div class="screen">
+              <div class="screen-visual"></div>
+              <div class="screen-copy">
+                <div><span>Platform-ready portfolio</span><b>案例、价格、流程和咨询入口都放在一页。</b></div>
+                <p>不是只展示“会做网页”，而是展示客户下单后能拿到什么。</p>
               </div>
             </div>
           </div>
+          <div class="phone"><img src="assets/cover-home-mobile.png" alt="手机端作品集预览"></div>
         </div>
       </div>
     </section>
 
     <section id="cases">
       <div class="wrap">
-        <h2>不是空模板，是可直接参考的成交页面结构。</h2>
-        <p class="lead">每个案例都包含首屏介绍、服务/菜单、价格、流程、FAQ 或咨询入口。第一阶段先做一页，让客户有一个可以打开的正式链接。</p>
-        <div class="grid">
-          <a class="case" href="samples/jp-salon-site.html"><div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=80')"></div><div class="case-body"><span class="tag jp">日本小店</span><h3>表参道美容室一页官网</h3><p>菜单、价格、营业时间、预约入口，适合美容室、美甲、整体。</p></div></a>
-          <a class="case" href="samples/cn-course-landing.html"><div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?auto=format&fit=crop&w=1000&q=80')"></div><div class="case-body"><span class="tag cn">中文课程</span><h3>日语生活口语报名页</h3><p>适合课程、训练营、留学辅导，把微信咨询变成公开报名页。</p></div></a>
-          <a class="case" href="samples/cn-consulting-page.html"><div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80')"></div><div class="case-body"><span class="tag cn">咨询服务</span><h3>留学签证咨询预约页</h3><p>服务范围、收费方式、预约流程和 FAQ 集中展示。</p></div></a>
-          <a class="case" href="samples/jp-guesthouse-site.html"><div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80')"></div><div class="case-body"><span class="tag jp">中日双语</span><h3>京都民宿中日双语介绍页</h3><p>房型、价格、交通、入住规则和咨询入口，适合民宿/地方体验。</p></div></a>
-          <a class="case" href="samples/app-dashboard-demo.html"><div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80')"></div><div class="case-body"><span class="tag app">升级服务</span><h3>小团队订单看板</h3><p>后续加价服务，用来管理咨询、报价、制作和交付状态。</p></div></a>
-          <a class="case" href="samples/index.html"><div class="case-img" style="background-image:url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1000&q=80')"></div><div class="case-body"><span class="tag">作品集</span><h3>完整样品集</h3><p>集中查看网站、落地页和轻量 APP 样品。</p></div></a>
+        <div class="section-head">
+          <div>
+            <h2>可直接拿去接单的案例结构</h2>
+            <p>按中文客户、日本小店和升级服务分组。每个案例都有真实业务场景、价格/流程/咨询入口，不再只是空模板。</p>
+          </div>
+          <div class="filters" aria-label="案例筛选">
+            <button class="chip active" data-filter="all">全部</button>
+            <button class="chip" data-filter="jp">日本小店</button>
+            <button class="chip" data-filter="cn">中文服务</button>
+            <button class="chip" data-filter="app">轻量 APP</button>
+          </div>
+        </div>
+
+        <div class="grid" id="caseGrid">
+          <article class="case" data-kind="jp" data-title="表参道美容室一页官网" data-url="samples/jp-salon-site.html" data-problem="SNS 有照片但菜单、营业时间和预约方式不够清楚。" data-result="把菜单、价格、营业时间、预约入口和安心感集中到一页，适合美容室、美甲、整体店。" data-price="JPY 9,800 起">
+            <div class="case-shot"><img src="assets/case-salon-desktop.png" alt="表参道美容室一页官网截图"></div>
+            <div class="case-body"><span class="tag jp">日本小店</span><h3>表参道美容室一页官网</h3><p>菜单、价格、营业时间、预约入口，适合美容室、美甲、整体。</p><div class="case-actions"><button class="smallbtn dark" data-detail>看详情</button><a class="smallbtn" href="samples/jp-salon-site.html">打开页面</a></div></div>
+          </article>
+
+          <article class="case" data-kind="cn" data-title="日语生活口语报名页" data-url="samples/cn-course-landing.html" data-problem="课程只靠朋友圈介绍，客户反复问适合谁、多少钱、怎么报名。" data-result="把适合人群、课程安排、老师介绍、价格和 FAQ 放在一页，方便报名咨询。" data-price="RMB 499 起">
+            <div class="case-shot"><img src="assets/case-course-desktop.png" alt="日语生活口语报名页截图"></div>
+            <div class="case-body"><span class="tag cn">中文服务</span><h3>日语生活口语报名页</h3><p>适合课程、训练营、留学辅导，把微信咨询变成公开报名页。</p><div class="case-actions"><button class="smallbtn dark" data-detail>看详情</button><a class="smallbtn" href="samples/cn-course-landing.html">打开页面</a></div></div>
+          </article>
+
+          <article class="case" data-kind="cn" data-title="留学签证咨询预约页" data-url="samples/cn-consulting-page.html" data-problem="咨询服务容易被反复问流程、费用和需要准备什么。" data-result="用服务范围、收费方式、预约流程和 FAQ 先筛选客户，减少重复解释。" data-price="RMB 499 起">
+            <div class="case-shot"><img src="assets/case-consulting-desktop.png" alt="留学签证咨询预约页截图"></div>
+            <div class="case-body"><span class="tag cn">中文服务</span><h3>留学签证咨询预约页</h3><p>服务范围、收费方式、预约流程和 FAQ 集中展示。</p><div class="case-actions"><button class="smallbtn dark" data-detail>看详情</button><a class="smallbtn" href="samples/cn-consulting-page.html">打开页面</a></div></div>
+          </article>
+
+          <article class="case" data-kind="jp" data-title="京都民宿中日双语介绍页" data-url="samples/jp-guesthouse-site.html" data-problem="民宿客户最常问房型、价格、交通、入住规则和联系方式。" data-result="把房型、价格、交通、入住规则和咨询入口做成中日双语介绍页。" data-price="JPY 19,800 起">
+            <div class="case-shot"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=80" alt="京都民宿介绍页预览"></div>
+            <div class="case-body"><span class="tag jp">中日双语</span><h3>京都民宿中日双语介绍页</h3><p>适合民宿、短租、地方体验和中文游客接待。</p><div class="case-actions"><button class="smallbtn dark" data-detail>看详情</button><a class="smallbtn" href="samples/jp-guesthouse-site.html">打开页面</a></div></div>
+          </article>
+
+          <article class="case" data-kind="app" data-title="小团队订单看板" data-url="samples/app-dashboard-demo.html" data-problem="客户咨询、报价、制作和交付散落在 Excel/微信里，容易漏单。" data-result="用看板把状态集中起来，后续作为网站客户的升级服务销售。" data-price="RMB 1,999 起">
+            <div class="case-shot"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="小团队订单看板预览"></div>
+            <div class="case-body"><span class="tag app">升级服务</span><h3>小团队订单看板</h3><p>管理咨询、报价、制作和交付状态，适合作为后续加价。</p><div class="case-actions"><button class="smallbtn dark" data-detail>看详情</button><a class="smallbtn" href="samples/app-dashboard-demo.html">打开页面</a></div></div>
+          </article>
+
+          <article class="case" data-kind="all" data-title="完整样品集" data-url="samples/index.html" data-problem="客户想一次看完整样品，而不是逐个打开链接。" data-result="集中展示所有网站、落地页和轻量 APP 方向，便于发给客户。" data-price="作品集入口">
+            <div class="case-shot"><img src="assets/cover-home-desktop.png" alt="完整样品集预览"></div>
+            <div class="case-body"><span class="tag">作品集</span><h3>完整样品集</h3><p>集中查看网站、落地页和轻量 APP 样品。</p><div class="case-actions"><button class="smallbtn dark" data-detail>看详情</button><a class="smallbtn" href="samples/index.html">打开页面</a></div></div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="alt" id="packages">
       <div class="wrap">
-        <h2>首批客户体验价：先做一页，先上线。</h2>
-        <div class="grid">
-          <div class="package"><h3>中文单页落地页</h3><p>服务介绍、价格/套餐、流程、FAQ、邮箱/微信咨询入口。</p><div class="price">RMB 499 起</div></div>
-          <div class="package"><h3>日本語 1ページ LP</h3><p>メニュー、料金、営業時間、予約導線をスマホで見やすく整理。</p><div class="price">JPY 9,800 起</div></div>
-          <div class="package"><h3>页面诊断 + 文案改稿</h3><p>已有页面但不清楚时，先改首屏、结构和咨询路径。</p><div class="price">RMB 199 / JPY 5,000</div></div>
+        <div class="section-head"><div><h2>低价启动包，不是廉价模板</h2><p>先用一页把业务讲清楚，后续有咨询再加页面、表单、预约或后台。</p></div></div>
+        <div class="packages">
+          <div class="package"><h3>中文单页落地页</h3><p>课程、咨询、小店、在日华人服务。</p><div class="price">RMB 499 起</div><ul><li>最多 5 个内容区块</li><li>手机适配</li><li>含 1 次文字修改</li><li>3 天初稿</li></ul></div>
+          <div class="package"><h3>日本語 1ページ LP</h3><p>美容室、ネイル、整体、教室、民宿。</p><div class="price">JPY 9,800 起</div><ul><li>メニュー・料金整理</li><li>スマホ対応</li><li>修正 1 回</li><li>3 日目安</li></ul></div>
+          <div class="package"><h3>页面诊断 + 文案改稿</h3><p>已有页面但客户看不懂时先做低价诊断。</p><div class="price">RMB 199 / JPY 5,000</div><ul><li>首屏问题</li><li>服务结构</li><li>CTA 文案</li><li>24 小时交付</li></ul></div>
         </div>
       </div>
     </section>
 
     <section id="flow">
-      <div class="wrap split">
-        <div>
-          <h2>低价不是廉价，是降低第一次合作门槛。</h2>
-          <p>为了让第一次合作成本更低，我们把范围控制在一页网站：服务介绍、价格/菜单、流程、FAQ、咨询入口，含一次文字修改。需要更多页面或预约/支付功能时，再单独加价。</p>
+      <div class="wrap">
+        <div class="section-head"><div><h2>客户下单后怎么交付</h2><p>流程要让客户觉得省事，也要控制低价单范围。</p></div></div>
+        <div class="process">
+          <div class="step"><h3>收资料</h3><p>业务名、服务内容、价格、联系方式、图片或参考风格。</p></div>
+          <div class="step"><h3>出结构</h3><p>整理首屏、服务、价格、流程、FAQ、咨询入口。</p></div>
+          <div class="step"><h3>做页面</h3><p>完成手机适配页面，发可打开链接给客户看。</p></div>
+          <div class="step"><h3>改一次</h3><p>客户用文字列修改点，我们完成一次小修改后交付。</p></div>
         </div>
-        <div class="quote">
-          <h3>你只需要提供</h3>
-          <p>业务名称、服务内容、价格/菜单、联系方式、图片或参考风格。没有完整文案也可以，我们先帮你整理成初稿。</p>
+      </div>
+    </section>
+
+    <section class="alt" id="covers">
+      <div class="wrap">
+        <div class="section-head"><div><h2>平台上架封面素材</h2><p>Coconala、Lancers、猪八戒可以先用这些图。封面文字另有上架包，避免违规词。</p></div></div>
+        <div class="covers">
+          <div class="cover"><img src="assets/cover-home-desktop.png" alt="作品集桌面封面"><div class="actions"><a class="smallbtn dark" href="assets/cover-home-desktop.png">打开桌面封面</a><a class="smallbtn" href="assets/cover-home-mobile.png">打开手机封面</a></div></div>
+          <div class="cover-list">
+            <div class="cover"><h3>Coconala 封面文案</h3><p>1ページLP制作 / 日本語・中国語対応 / 3日目安 / 修正1回 / 9,800円</p></div>
+            <div class="cover"><h3>猪八戒封面文案</h3><p>499元一页落地页 / 课程咨询小店适用 / 手机适配 / 3天交付</p></div>
+            <div class="cover"><h3>素材位置</h3><p>本地目录：D:\ai-monthly-income-project\agency-restart\assets</p></div>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="contact">
       <div class="wrap">
-        <h2>先发文字需求，不需要电话。</h2>
-        <p class="lead">支持中文和日语文字沟通。请简单说明行业、页面类型、服务内容和希望客户点击什么按钮。</p>
-        <a class="btn" href="mailto:xzlhy129824@gmail.com?subject=网站制作咨询">邮件咨询制作</a>
+        <div class="qa">
+          <div><h2>为什么这种作品客户会更容易要？</h2><p>它不是展示“会写网页”，而是展示“客户买了之后可以少解释、看起来正规、能接咨询”。小商家和课程客户更关心这个。</p></div>
+          <div><h2>现在还缺什么？</h2><p>真实成交案例和客户评价。第一单完成后，要立刻把真实客户页面替换掉样品页，平台转化率会明显提高。</p><a class="btn teal" href="mailto:xzlhy129824@gmail.com?subject=网站制作咨询">邮件咨询制作</a></div>
+        </div>
       </div>
     </section>
   </main>
+
+  <div class="sticky-cta"><span>首批体验价：一页网站 3天初稿</span><a href="mailto:xzlhy129824@gmail.com?subject=网站制作咨询">发需求</a></div>
+
+  <dialog id="caseDialog">
+    <div class="modal-head"><strong id="modalTitle">案例详情</strong><button id="closeDialog" aria-label="关闭">×</button></div>
+    <div class="detail">
+      <div class="detail-grid">
+        <div class="detail-box"><h3>客户问题</h3><p id="modalProblem"></p></div>
+        <div class="detail-box"><h3>页面结果</h3><p id="modalResult"></p></div>
+      </div>
+      <ul>
+        <li id="modalPrice"></li>
+        <li>交付方式：文字沟通，资料齐全后出初稿。</li>
+        <li>适合低预算客户先上线，再根据真实咨询情况加功能。</li>
+      </ul>
+      <div class="actions"><a class="btn" id="modalOpen" href="#">打开案例页</a><a class="btn alt" href="#packages">查看价格</a></div>
+    </div>
+  </dialog>
+
   <footer><div class="wrap">Northstar Web Studio · Websites, landing pages and lightweight apps</div></footer>
+
+  <script>
+    const chips = document.querySelectorAll(".chip");
+    const cases = document.querySelectorAll(".case");
+    chips.forEach(chip => {
+      chip.addEventListener("click", () => {
+        chips.forEach(c => c.classList.remove("active"));
+        chip.classList.add("active");
+        const filter = chip.dataset.filter;
+        cases.forEach(card => {
+          const kind = card.dataset.kind;
+          card.classList.toggle("hide", !(filter === "all" || kind === filter || kind === "all"));
+        });
+      });
+    });
+
+    const dialog = document.getElementById("caseDialog");
+    const title = document.getElementById("modalTitle");
+    const problem = document.getElementById("modalProblem");
+    const result = document.getElementById("modalResult");
+    const price = document.getElementById("modalPrice");
+    const open = document.getElementById("modalOpen");
+    document.querySelectorAll("[data-detail]").forEach(button => {
+      button.addEventListener("click", () => {
+        const card = button.closest(".case");
+        title.textContent = card.dataset.title;
+        problem.textContent = card.dataset.problem;
+        result.textContent = card.dataset.result;
+        price.textContent = "参考价格：" + card.dataset.price;
+        open.href = card.dataset.url;
+        if (dialog.showModal) dialog.showModal();
+      });
+    });
+    document.getElementById("closeDialog").addEventListener("click", () => dialog.close());
+  </script>
 </body>
 </html>
