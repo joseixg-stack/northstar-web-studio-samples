@@ -73,10 +73,11 @@
     .process{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:step}
     .step{background:white;border:1px solid var(--line);border-radius:8px;padding:18px}
     .step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#111827;color:white;font-weight:900;margin-bottom:12px}
-    .covers{display:grid;grid-template-columns:1.35fr .65fr;gap:18px;align-items:start}
+    .covers{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+    .cover-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
     .cover{background:white;border:1px solid var(--line);border-radius:8px;padding:18px}
     .cover img{width:100%;border:1px solid var(--line);border-radius:7px;display:block;background:#f2f4f7}
-    .cover-list{display:grid;gap:12px}
+    .cover-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
     .qa{display:grid;grid-template-columns:1fr 1fr;gap:18px}
     .qa div{background:#f8fafc;border:1px solid var(--line);border-radius:8px;padding:18px}
     .sticky-cta{position:fixed;left:50%;bottom:16px;transform:translateX(-50%);z-index:60;background:rgba(17,24,39,.94);color:white;border:1px solid rgba(255,255,255,.18);border-radius:8px;padding:10px 12px;display:flex;align-items:center;gap:12px;box-shadow:0 18px 52px rgba(17,24,39,.25)}
@@ -91,7 +92,7 @@
     .detail-box{border:1px solid var(--line);border-radius:8px;padding:14px;background:#f8fafc}
     footer{background:#101828;color:#cbd5e1;padding:34px 20px;margin-bottom:74px}
     @media(max-width:960px){
-      .hero-grid,.grid,.packages,.process,.covers,.qa,.detail-grid,.screen{grid-template-columns:1fr}
+      .hero-grid,.grid,.packages,.process,.covers,.qa,.detail-grid,.screen,.cover-gallery,.cover-list{grid-template-columns:1fr}
       .stage{min-height:auto}.phone{position:relative;right:auto;margin:16px auto 0}.screen-visual{min-height:260px}
       .section-head{display:block}.filters{margin-top:14px}nav{align-items:flex-start;flex-direction:column}nav a{margin-left:0;margin-right:14px}
       .sticky-cta{width:calc(100vw - 20px);justify-content:space-between}.sticky-cta span{font-size:13px;white-space:normal;line-height:1.25;flex:1}
@@ -229,13 +230,20 @@
 
     <section class="alt" id="covers">
       <div class="wrap">
-        <div class="section-head"><div><h2>平台上架封面素材</h2><p>Coconala、Lancers、猪八戒可以先用这些图。封面文字另有上架包，避免违规词。</p></div></div>
+        <div class="section-head"><div><h2>平台上架封面素材</h2><p>先主攻 Coconala：6 张日语服务图已经按平台使用场景整理，覆盖主封面、案例、手机端、包含内容、制作流程和范围说明。</p></div></div>
         <div class="covers">
-          <div class="cover"><img src="assets/cover-home-desktop.png" alt="作品集桌面封面"><div class="actions"><a class="smallbtn dark" href="assets/cover-home-desktop.png">打开桌面封面</a><a class="smallbtn" href="assets/cover-home-mobile.png">打开手机封面</a></div></div>
+          <div class="cover-gallery">
+            <div class="cover"><img src="assets/coconala-cover-main.png" alt="Coconala 主封面"><h3>01 主封面</h3><p>一页 LP 制作、价格和核心卖点。</p><div class="actions"><a class="smallbtn dark" href="assets/coconala-cover-main.png">打开图片</a></div></div>
+            <div class="cover"><img src="assets/coconala-cover-cases.png" alt="Coconala 案例展示"><h3>02 案例展示</h3><p>展示店铺、教室、咨询、个人服务。</p><div class="actions"><a class="smallbtn dark" href="assets/coconala-cover-cases.png">打开图片</a></div></div>
+            <div class="cover"><img src="assets/coconala-cover-mobile.png" alt="Coconala 手机端展示"><h3>03 手机端展示</h3><p>SNS 链接和移动端阅读场景。</p><div class="actions"><a class="smallbtn dark" href="assets/coconala-cover-mobile.png">打开图片</a></div></div>
+            <div class="cover"><img src="assets/coconala-cover-included.png" alt="Coconala 服务包含内容"><h3>04 包含内容</h3><p>说明基础套餐里包含什么。</p><div class="actions"><a class="smallbtn dark" href="assets/coconala-cover-included.png">打开图片</a></div></div>
+            <div class="cover"><img src="assets/coconala-cover-flow.png" alt="Coconala 制作流程"><h3>05 制作流程</h3><p>强调只用站内消息也能推进。</p><div class="actions"><a class="smallbtn dark" href="assets/coconala-cover-flow.png">打开图片</a></div></div>
+            <div class="cover"><img src="assets/coconala-cover-scope.png" alt="Coconala 范围说明"><h3>06 范围说明</h3><p>提前说明边界，减少低价单纠纷。</p><div class="actions"><a class="smallbtn dark" href="assets/coconala-cover-scope.png">打开图片</a></div></div>
+          </div>
           <div class="cover-list">
-            <div class="cover"><h3>Coconala 封面文案</h3><p>1ページLP制作 / 日本語・中国語対応 / 3日目安 / 修正1回 / 9,800円</p></div>
-            <div class="cover"><h3>猪八戒封面文案</h3><p>499元一页落地页 / 课程咨询小店适用 / 手机适配 / 3天交付</p></div>
-            <div class="cover"><h3>素材位置</h3><p>本地目录：D:\ai-monthly-income-project\agency-restart\assets</p></div>
+            <div class="cover"><h3>Coconala 标题</h3><p>日本語・中国語対応の1ページLPを制作します</p></div>
+            <div class="cover"><h3>初始定价</h3><p>9,800円。先用低价获取第一批平台成交和评价。</p></div>
+            <div class="cover"><h3>上架原则</h3><p>不放邮箱、LINE、PayPal、外部链接；只用平台站内消息沟通。</p></div>
           </div>
         </div>
       </div>
