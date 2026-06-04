@@ -341,6 +341,7 @@
     @media(max-width:640px){
       nav{height:auto;align-items:flex-start;padding:12px 0;flex-direction:column}
       .navlinks{justify-content:flex-start}
+      .navlinks a{font-size:13px;padding:7px 8px}
       .hero-grid{padding-top:34px;padding-right:42px}
       .hero-grid > div:first-child{width:100%;max-width:320px;min-width:0}
       h1{font-size:29px;line-height:1.16}
@@ -367,7 +368,7 @@
         <div class="navlinks" aria-label="ページ内メニュー">
           <a href="#cases">制作サンプル</a>
           <a href="#packages">料金目安</a>
-          <a href="#covers">出品画像</a>
+          <a href="#service">サービス内容</a>
           <a href="#flow">進行方法</a>
         </div>
       </nav>
@@ -378,12 +379,12 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow">小さく始める正式な1ページLP</div>
-          <h1>サービス内容が伝わる<br>店舗向けLPを、<br>スマホ基準で制作します。</h1>
+          <div class="eyebrow">サービス内容を整える1ページLP</div>
+          <h1>店舗向けLPを、<br>スマホ基準で制作します。</h1>
           <p class="lead">美容室、ネイル、整体、教室、民宿、相談サービスなど、SNSだけでは伝わりにくい料金・流れ・よくある質問・問い合わせ導線を1ページに整理します。電話会議なし、文章で進行できます。</p>
           <div class="hero-actions">
             <a class="btn teal" href="#cases">サンプルを見る</a>
-            <a class="btn secondary" href="#covers">出品用画像を見る</a>
+            <a class="btn secondary" href="#service">サービス内容を見る</a>
           </div>
           <div class="stats" aria-label="制作方針">
             <div class="stat"><strong>8</strong><span>公開サンプル</span></div>
@@ -395,7 +396,7 @@
           <div class="screen-stack">
             <div class="shot large"><img src="assets/case-salon-desktop.png" alt="美容室LPのデスクトップ表示"></div>
             <div class="shot small"><img src="assets/case-nail-desktop.png" alt="ネイルサロンLPの表示"></div>
-            <div class="shot mobile"><img src="assets/coconala-cover-mobile.png" alt="スマホ対応説明画像"></div>
+            <div class="shot mobile"><img src="assets/lp-service-cover-mobile.png" alt="スマホ対応画面"></div>
             <div class="label">スマホで読みやすい構成</div>
           </div>
         </div>
@@ -418,22 +419,22 @@
         </div>
 
         <div class="grid" id="caseGrid">
-          <article class="case" data-kind="jp" data-title="美容室 1ページLP" data-url="samples/jp-salon-site.html" data-problem="SNS投稿だけではメニュー、価格、予約前の不安が分散して伝わりにくい状態。" data-result="メニュー、料金、来店前の流れ、予約導線を1ページに整理。落ち着いた美容室向けの見た目で信頼感を出す構成。" data-price="初回向け: JPY 15,000">
+          <article class="case" data-kind="jp" data-title="美容室 1ページLP" data-url="samples/jp-salon-site.html" data-problem="SNS投稿だけではメニュー、価格、予約前の不安が分散して伝わりにくい状態。" data-result="メニュー、料金、来店前の流れ、予約導線を1ページに整理。落ち着いた美容室向けの見た目で信頼感を出す構成。" data-price="制作料金目安: JPY 15,000">
             <div class="case-shot"><img src="assets/case-salon-desktop.png" alt="美容室LPサンプル"></div>
             <div class="case-body"><span class="tag">日本向け</span><h3>美容室 1ページLP</h3><p>メニュー、料金、予約導線を自然に読ませる美容室向けサンプル。</p><div class="case-actions"><button class="smallbtn dark" data-detail>詳細</button><a class="smallbtn" href="samples/jp-salon-site.html">ページを開く</a></div></div>
           </article>
 
-          <article class="case" data-kind="jp" data-title="ネイルサロン 中日双语LP" data-url="samples/jp-nail-bilingual.html" data-problem="在日中国語ユーザーと日本語ユーザーの両方に、価格や予約方法を同じページで伝えたい。" data-result="日本語と中国語を混ぜすぎず、予約前に知りたい情報を短く整理。写真と料金表を中心にした構成。" data-price="初回向け: JPY 15,000">
+          <article class="case" data-kind="jp" data-title="ネイルサロン 中日双语LP" data-url="samples/jp-nail-bilingual.html" data-problem="在日中国語ユーザーと日本語ユーザーの両方に、価格や予約方法を同じページで伝えたい。" data-result="日本語と中国語を混ぜすぎず、予約前に知りたい情報を短く整理。写真と料金表を中心にした構成。" data-price="制作料金目安: JPY 15,000">
             <div class="case-shot"><img src="assets/case-nail-desktop.png" alt="ネイルサロン中日双语LPサンプル"></div>
             <div class="case-body"><span class="tag">日本向け</span><h3>ネイルサロン 中日双语LP</h3><p>在日華人客にも日本人客にも伝わるサービス紹介ページ。</p><div class="case-actions"><button class="smallbtn dark" data-detail>詳細</button><a class="smallbtn" href="samples/jp-nail-bilingual.html">ページを開く</a></div></div>
           </article>
 
-          <article class="case" data-kind="jp" data-title="整体院 予約導線LP" data-url="samples/jp-seitai-clinic.html" data-problem="初回来院前に症状、料金、施術の流れがわからず、問い合わせの心理的ハードルが高い。" data-result="症状別の悩み、施術メニュー、予約までの流れを1ページにまとめ、スマホで読みやすく整理。" data-price="初回向け: JPY 15,000">
+          <article class="case" data-kind="jp" data-title="整体院 予約導線LP" data-url="samples/jp-seitai-clinic.html" data-problem="初回来院前に症状、料金、施術の流れがわからず、問い合わせの心理的ハードルが高い。" data-result="症状別の悩み、施術メニュー、予約までの流れを1ページにまとめ、スマホで読みやすく整理。" data-price="制作料金目安: JPY 15,000">
             <div class="case-shot"><img src="assets/case-seitai-desktop.png" alt="整体院LPサンプル"></div>
             <div class="case-body"><span class="tag">日本向け</span><h3>整体院 予約導線LP</h3><p>症状、料金、予約の流れを整理した店舗LP。</p><div class="case-actions"><button class="smallbtn dark" data-detail>詳細</button><a class="smallbtn" href="samples/jp-seitai-clinic.html">ページを開く</a></div></div>
           </article>
 
-          <article class="case" data-kind="jp" data-title="民宿 中日双语紹介ページ" data-url="samples/jp-guesthouse-site.html" data-problem="部屋タイプ、価格、交通、周辺体験を海外ゲストにもわかりやすく伝える必要がある。" data-result="宿の特徴、部屋、アクセス、相談導線を1ページに整理。観光客が迷わない情報順序に調整。" data-price="初回向け: JPY 19,800">
+          <article class="case" data-kind="jp" data-title="民宿 中日双语紹介ページ" data-url="samples/jp-guesthouse-site.html" data-problem="部屋タイプ、価格、交通、周辺体験を海外ゲストにもわかりやすく伝える必要がある。" data-result="宿の特徴、部屋、アクセス、相談導線を1ページに整理。観光客が迷わない情報順序に調整。" data-price="制作料金目安: JPY 19,800">
             <div class="case-shot"><img src="assets/case-guesthouse-desktop.png" alt="民宿紹介ページサンプル"></div>
             <div class="case-body"><span class="tag">日本向け</span><h3>民宿 中日双语紹介ページ</h3><p>部屋、料金、交通、周辺情報を見やすくした宿泊向けサンプル。</p><div class="case-actions"><button class="smallbtn dark" data-detail>詳細</button><a class="smallbtn" href="samples/jp-guesthouse-site.html">ページを開く</a></div></div>
           </article>
@@ -464,34 +465,34 @@
     <section class="alt" id="packages">
       <div class="wrap">
         <div class="section-head">
-          <div><h2>最初の出品価格と範囲</h2><p>初期は価格を抑え、範囲を明確にして受注しやすくします。安く見せるのではなく、1ページに絞って納品リスクを下げる設計です。</p></div>
+          <div><h2>料金と制作範囲</h2><p>まずは1ページに絞り、サービス内容・料金・流れ・問い合わせ導線を分かりやすく整理します。</p></div>
         </div>
         <div class="packages">
-          <div class="package"><h3>Coconala 初回LP</h3><p>小規模店舗向けの1ページLP。日本語での出品用。</p><div class="price">15,000円</div><ul><li>最大5セクション</li><li>スマホ対応</li><li>文章整理込み</li><li>修正1回</li></ul></div>
+          <div class="package"><h3>1ページLP制作</h3><p>小規模店舗、教室、サロン、個人サービス向け。</p><div class="price">15,000円</div><ul><li>最大5セクション</li><li>スマホ対応</li><li>文章整理込み</li><li>修正1回</li></ul></div>
           <div class="package"><h3>中文落地页</h3><p>课程、咨询、餐饮、小服务商向け的中文页面。</p><div class="price">RMB 499起</div><ul><li>服务介绍</li><li>价格和流程</li><li>报名/咨询入口</li><li>3天初稿</li></ul></div>
           <div class="package"><h3>追加制作</h3><p>首个页面成交后，再追加更高客单价的功能。</p><div class="price">3,000円起</div><ul><li>追加セクション</li><li>追加修正</li><li>中日文章整理</li><li>管理画面デモ</li></ul></div>
         </div>
       </div>
     </section>
 
-    <section id="covers">
+    <section id="service">
       <div class="wrap">
         <div class="section-head">
-          <div><h2>Coconala 出品用画像</h2><p>出品ページでは長文を読まない人が多いため、1枚目で価格・対象・納期、2枚目以降で実績感・スマホ対応・範囲・流れを伝える構成にしています。</p></div>
+          <div><h2>サービス内容</h2><p>制作範囲、スマホ対応、進行方法を事前に明確にして、依頼後のやり取りを進めやすくします。</p></div>
         </div>
         <div class="covers">
           <div class="cover-gallery">
-            <div class="cover"><img src="assets/coconala-cover-main.png" alt="Coconalaメイン画像"><h3>01 メイン画像</h3><p>1ページLP、価格、3日目安を最初に伝える。</p></div>
-            <div class="cover"><img src="assets/coconala-cover-cases.png" alt="Coconalaケース画像"><h3>02 サンプル一覧</h3><p>店舗、教室、相談サービスの制作幅を見せる。</p></div>
-            <div class="cover"><img src="assets/coconala-cover-mobile.png" alt="Coconalaスマホ対応画像"><h3>03 スマホ対応</h3><p>買い手が一番気にする見やすさを説明。</p></div>
-            <div class="cover"><img src="assets/coconala-cover-included.png" alt="Coconala含まれる内容画像"><h3>04 含まれる内容</h3><p>文章整理、料金、FAQ、導線を明確化。</p></div>
-            <div class="cover"><img src="assets/coconala-cover-flow.png" alt="Coconala制作流れ画像"><h3>05 制作の流れ</h3><p>電話なし、トークルームで進行できる安心感。</p></div>
-            <div class="cover"><img src="assets/coconala-cover-scope.png" alt="Coconala範囲説明画像"><h3>06 範囲説明</h3><p>低価格プランの上限を先に示してトラブルを防ぐ。</p></div>
+            <div class="cover"><img src="assets/lp-service-cover-main.png" alt="1ページLP制作の概要"><h3>01 1ページLP</h3><p>対象、料金、納期、基本範囲を分かりやすく提示。</p></div>
+            <div class="cover"><img src="assets/lp-service-cover-cases.png" alt="制作できる業種例"><h3>02 業種例</h3><p>店舗、教室、サロン、個人サービスに対応。</p></div>
+            <div class="cover"><img src="assets/lp-service-cover-mobile.png" alt="スマホ対応画面"><h3>03 スマホ対応</h3><p>SNSリンクから見ても読みやすい構成。</p></div>
+            <div class="cover"><img src="assets/lp-service-cover-included.png" alt="含まれる制作内容"><h3>04 含まれる内容</h3><p>文章整理、料金、FAQ、問い合わせ導線を整理。</p></div>
+            <div class="cover"><img src="assets/lp-service-cover-flow.png" alt="制作の流れ"><h3>05 制作の流れ</h3><p>必要情報を確認し、初稿、修正、納品まで進行。</p></div>
+            <div class="cover"><img src="assets/lp-service-cover-scope.png" alt="制作範囲"><h3>06 制作範囲</h3><p>含まれる内容と別料金になる内容を明確化。</p></div>
           </div>
           <div class="cover-list">
-            <div class="cover"><h3>出品タイトル</h3><p>店舗向け1ページLPを制作します</p></div>
-            <div class="cover"><h3>キャッチコピー</h3><p>小規模店舗向け｜スマホ対応・3日目安</p></div>
-            <div class="cover"><h3>運用ルール</h3><p>相談と納品は利用中のプラットフォーム内で完結。外部連絡先は掲載しない。</p></div>
+            <div class="cover"><h3>対象</h3><p>美容室、ネイル、整体、教室、民宿、相談サービス。</p></div>
+            <div class="cover"><h3>進行</h3><p>必要情報を文章で確認し、電話会議なしで制作できます。</p></div>
+            <div class="cover"><h3>納品</h3><p>1回の修正を反映し、完成データとして納品します。</p></div>
           </div>
         </div>
       </div>
@@ -514,8 +515,8 @@
     <section id="trust">
       <div class="wrap">
         <div class="trust">
-          <div class="trust-box"><h2>AI感を出さない方針</h2><p>サービス説明では技術名を前面に出さず、買い手の悩み、料金、流れ、納品範囲を中心に見せます。画像も抽象的な装飾ではなく、実際のページ画面を使います。</p></div>
-          <div class="trust-box"><h2>平台内で安全に完結</h2><p>Coconala ではトークルームでやり取りし、電話や外部連絡先に頼らない進行にします。購入前に必要情報を明確にすることで、言語の不安も下げます。</p></div>
+          <div class="trust-box"><h2>内容を分かりやすく整理</h2><p>サービス内容、料金、流れ、よくある質問、問い合わせ導線を1ページにまとめ、初めて見る方にも伝わりやすくします。</p></div>
+          <div class="trust-box"><h2>文章で進められる制作</h2><p>店名、掲載内容、料金、写真、参考イメージを共有いただければ、電話会議なしで初稿制作まで進行できます。</p></div>
         </div>
       </div>
     </section>
@@ -523,12 +524,12 @@
 
   <footer>
     <div class="wrap footer-grid">
-      <div><strong>Northstar Web Studio</strong><br>制作サンプルポートフォリオ</div>
-      <div>連絡と取引は利用中のプラットフォーム内で行います。</div>
+      <div><strong>Northstar Web Studio</strong><br>店舗向けLP制作サンプル</div>
+      <div>店舗・教室・個人サービス向けの1ページLP制作。</div>
     </div>
   </footer>
 
-  <div class="sticky-cta"><span>Coconala向け: LP 15,000円</span><a href="#covers">出品画像</a></div>
+  <div class="sticky-cta"><span>1ページLP制作 15,000円</span><a href="#service">内容を見る</a></div>
 
   <dialog id="caseDialog">
     <div class="modal-head"><strong id="modalTitle">サンプル詳細</strong><button id="closeDialog" aria-label="閉じる">x</button></div>
