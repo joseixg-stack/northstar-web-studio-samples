@@ -1,31 +1,50 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="ja">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Northstar Web Studio | 8个一页网站参考案例</title>
+  <title>制作サンプル一覧 | Northstar Web Studio</title>
   <style>
-    :root{--ink:#111827;--muted:#667085;--line:#d0d5dd;--soft:#f6f8fb}
-    *{box-sizing:border-box}body{margin:0;font-family:Arial,"Microsoft YaHei","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:var(--soft);line-height:1.65}
-    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}nav{max-width:1180px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}nav a{text-decoration:none;color:var(--ink);font-weight:800}
-    .wrap{max-width:1180px;margin:auto;width:100%}.hero{padding:58px 20px;background:#fff;border-bottom:1px solid var(--line)}h1{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:0 0 16px}h2{font-size:clamp(26px,4vw,38px);margin:0 0 18px}h3{margin:0 0 8px}.lead{font-size:18px;color:#344054;max-width:760px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:42px 20px}.card{background:white;border:1px solid var(--line);border-radius:8px;overflow:hidden;text-decoration:none;color:var(--ink)}.card img{width:100%;height:150px;object-fit:cover;object-position:top;display:block}.body{padding:15px}.body p{color:var(--muted);margin:0}.tag{display:inline-block;border-radius:999px;background:#eef4ff;color:#3538cd;padding:4px 9px;font-size:12px;font-weight:900;margin-bottom:8px}footer{padding:30px 20px;background:#111827;color:#cbd5e1}@media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.grid{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column}}
+    :root{--ink:#111827;--muted:#667085;--line:#d0d5dd;--soft:#f6f8fb;--teal:#0f766e}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,"Hiragino Kaku Gothic ProN","Yu Gothic","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--soft);line-height:1.65;letter-spacing:0}
+    a{text-decoration:none;color:inherit}
+    img{display:block;max-width:100%}
+    .wrap{max-width:1180px;margin:auto;width:100%;padding:0 20px}
+    header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+    nav{min-height:66px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    nav strong{font-size:17px}
+    nav a{font-weight:900;border:1px solid var(--line);padding:8px 12px;border-radius:6px;background:#fff}
+    .hero{padding:58px 0;background:#fff;border-bottom:1px solid var(--line)}
+    h1{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:0 0 14px}
+    .lead{font-size:18px;color:#344054;max-width:760px;margin:0}
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:42px 20px}
+    .card{background:white;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+    .card img{width:100%;height:165px;object-fit:cover;object-position:top;border-bottom:1px solid var(--line)}
+    .body{padding:15px}
+    .body h3{margin:0 0 8px;font-size:18px}
+    .body p{color:var(--muted);margin:0}
+    .tag{display:inline-block;border-radius:999px;background:#eef6f5;color:var(--teal);padding:4px 9px;font-size:12px;font-weight:900;margin-bottom:8px}
+    footer{padding:30px 0;background:#111827;color:#cbd5e1}
+    @media(max-width:980px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.grid{grid-template-columns:1fr}nav{align-items:flex-start;flex-direction:column;padding:12px 0}}
   </style>
 </head>
 <body>
-  <header><nav><strong>Northstar Web Studio</strong><a href="../index.html">返回作品集首页</a></nav></header>
+  <header><div class="wrap"><nav><strong>Northstar Web Studio</strong><a href="../index.html">ポートフォリオへ戻る</a></nav></div></header>
   <main>
-    <section class="hero"><div class="wrap"><h1>8个适合低预算客户的一页网站参考案例</h1><p class="lead">覆盖日本小店、中文课程、咨询服务、餐饮菜单、民宿和轻量 APP。每个案例都展示服务内容、价格、流程和咨询入口。</p></div></section>
+    <section class="hero"><div class="wrap"><h1>公開サンプル一覧</h1><p class="lead">小規模店舗、教室、相談サービス、追加開発向けのサンプルです。各ページはサービス内容、料金、流れ、FAQ、問い合わせ導線の見せ方を確認できます。</p></div></section>
     <div class="wrap grid">
-      <a class="card" href="jp-salon-site.html"><img src="../assets/case-salon-desktop.png" alt=""><div class="body"><span class="tag">日本小店</span><h3>美容室一页官网</h3><p>菜单、价格、预约入口。</p></div></a>
-      <a class="card" href="jp-nail-bilingual.html"><img src="../assets/case-nail-desktop.png" alt=""><div class="body"><span class="tag">中日双语</span><h3>美甲双语预约页</h3><p>中日客户都能看懂。</p></div></a>
-      <a class="card" href="jp-seitai-clinic.html"><img src="../assets/case-seitai-desktop.png" alt=""><div class="body"><span class="tag">日本小店</span><h3>整体院预约 LP</h3><p>症状、价格和预约流程。</p></div></a>
-      <a class="card" href="jp-guesthouse-site.html"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=80" alt=""><div class="body"><span class="tag">民宿</span><h3>京都民宿介绍页</h3><p>房型、价格、交通。</p></div></a>
-      <a class="card" href="cn-course-landing.html"><img src="../assets/case-course-desktop.png" alt=""><div class="body"><span class="tag">中文课程</span><h3>课程报名落地页</h3><p>适合人群、课程表、报名。</p></div></a>
-      <a class="card" href="cn-consulting-page.html"><img src="../assets/case-consulting-desktop.png" alt=""><div class="body"><span class="tag">咨询服务</span><h3>留学签证咨询页</h3><p>流程、费用、FAQ。</p></div></a>
-      <a class="card" href="cn-restaurant-menu.html"><img src="../assets/case-restaurant-desktop.png" alt=""><div class="body"><span class="tag">小餐饮</span><h3>菜单和预约页</h3><p>菜单、地址、预约入口。</p></div></a>
-      <a class="card" href="app-dashboard-demo.html"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt=""><div class="body"><span class="tag">升级服务</span><h3>订单看板 APP</h3><p>后续加价服务。</p></div></a>
+      <a class="card" href="jp-salon-site.html"><img src="../assets/case-salon-desktop.png" alt="美容室LP"><div class="body"><span class="tag">日本向け</span><h3>美容室 1ページLP</h3><p>メニュー、価格、予約前の不安を1ページに整理。</p></div></a>
+      <a class="card" href="jp-nail-bilingual.html"><img src="../assets/case-nail-desktop.png" alt="ネイルサロンLP"><div class="body"><span class="tag">日本向け</span><h3>ネイルサロン 中日双语LP</h3><p>在日華人客と日本人客の両方に向けた構成。</p></div></a>
+      <a class="card" href="jp-seitai-clinic.html"><img src="../assets/case-seitai-desktop.png" alt="整体院LP"><div class="body"><span class="tag">日本向け</span><h3>整体院 予約導線LP</h3><p>症状、料金、予約の流れを見やすく整理。</p></div></a>
+      <a class="card" href="jp-guesthouse-site.html"><img src="../assets/case-guesthouse-desktop.png" alt="民宿紹介ページ"><div class="body"><span class="tag">日本向け</span><h3>民宿 中日双语紹介ページ</h3><p>部屋、料金、交通、相談導線を集中表示。</p></div></a>
+      <a class="card" href="cn-course-landing.html"><img src="../assets/case-course-desktop.png" alt="日语课程报名页"><div class="body"><span class="tag">中文服务</span><h3>日语课程报名页</h3><p>适合课程、教练、培训服务的落地页。</p></div></a>
+      <a class="card" href="cn-consulting-page.html"><img src="../assets/case-consulting-desktop.png" alt="留学咨询服务页"><div class="body"><span class="tag">中文服务</span><h3>留学咨询服务页</h3><p>咨询范围、流程、FAQ 和提交资料清单。</p></div></a>
+      <a class="card" href="cn-restaurant-menu.html"><img src="../assets/case-restaurant-desktop.png" alt="小餐饮菜单页"><div class="body"><span class="tag">中文服务</span><h3>小餐饮菜单咨询页</h3><p>菜单、价格、地点、预约入口集中展示。</p></div></a>
+      <a class="card" href="app-dashboard-demo.html"><img src="../assets/case-orderboard-desktop.png" alt="订单看板APP"><div class="body"><span class="tag">追加开发</span><h3>小团队订单看板</h3><p>网站成交后的追加功能样例。</p></div></a>
     </div>
   </main>
-  <footer><div class="wrap">Northstar Web Studio · sample portfolio</div></footer>
+  <footer><div class="wrap">Northstar Web Studio sample portfolio</div></footer>
 </body>
 </html>
