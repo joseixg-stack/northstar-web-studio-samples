@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>整体院予約LP | Sample</title>
+  <style>
+    :root{--ink:#172033;--muted:#667085;--line:#d7e5df;--soft:#f4faf7;--green:#047857;--deep:#12352d}
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;color:var(--ink);background:var(--soft);line-height:1.7}
+    header{position:sticky;top:0;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);z-index:5}nav{max-width:1120px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}nav a{text-decoration:none;color:var(--ink);margin-left:16px;font-size:14px}
+    .hero{min-height:72vh;background:linear-gradient(90deg,rgba(18,53,45,.9),rgba(18,53,45,.5)),url("https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1800&q=80") center/cover;color:#fff;display:flex;align-items:center;padding:70px 20px}
+    .wrap{max-width:1120px;margin:auto;width:100%}h1{font-size:clamp(36px,6vw,66px);line-height:1.06;margin:0 0 18px;max-width:840px}h2{font-size:clamp(26px,4vw,38px);margin:0 0 18px;line-height:1.18}h3{margin:0 0 8px}p{margin:0 0 14px}.lead{font-size:18px;max-width:720px;color:#dcfce7}.tag{display:inline-block;background:#dcfce7;color:#166534;border-radius:999px;padding:5px 10px;font-weight:900;font-size:13px;margin-bottom:14px}.btn{display:inline-block;background:#86efac;color:#052e1a;text-decoration:none;border-radius:7px;padding:13px 18px;font-weight:900;margin-top:18px}
+    section{padding:62px 20px;background:white;border-bottom:1px solid var(--line)}section.alt{background:var(--soft)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:10px;padding:22px}.card p{color:var(--muted)}.price{font-size:34px;font-weight:950;color:var(--green)}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{background:#f8fffb;border:1px solid var(--line);border-radius:8px;padding:16px}.notice{background:#12352d;color:white;border-radius:10px;padding:26px}.notice p{color:#d8f3e8}
+    footer{padding:30px 20px;background:#12352d;color:#d8f3e8}@media(max-width:820px){.grid,.flow{grid-template-columns:1fr}nav{flex-direction:column;align-items:flex-start}nav a{margin-left:0;margin-right:14px}}
+  </style>
+</head>
+<body>
+  <header><nav><strong>みどり整体院</strong><div><a href="#trouble">悩み</a><a href="#price">料金</a><a href="#reserve">予約</a></div></nav></header>
+  <main>
+    <section class="hero"><div class="wrap"><span class="tag">整体院 / 予約導線 / 1ページLP</span><h1>肩こり・腰の違和感を、仕事帰りに整える。</h1><p class="lead">初めての方にも分かりやすく、症状・料金・施術の流れ・予約方法を1ページに整理した整体院向けLPです。</p><a class="btn" href="#reserve">予約相談する</a></div></section>
+    <section id="trouble"><div class="wrap"><h2>よくあるお悩み</h2><div class="grid"><div class="card"><h3>肩こり</h3><p>デスクワークで首や肩が重い方へ。</p></div><div class="card"><h3>腰の違和感</h3><p>長時間座る仕事や立ち仕事の方へ。</p></div><div class="card"><h3>姿勢の乱れ</h3><p>猫背や巻き肩が気になる方へ。</p></div></div></div></section>
+    <section class="alt" id="price"><div class="wrap"><h2>料金と流れ</h2><div class="grid"><div class="card"><h3>初回整体</h3><p>カウンセリング込み 60分</p><div class="price">¥4,980</div></div><div class="card"><h3>通常施術</h3><p>状態に合わせた整体 45分</p><div class="price">¥5,500</div></div><div class="notice"><h3>LP制作の狙い</h3><p>料金・流れ・予約方法を上部に出し、初めての不安を減らします。</p></div></div></div></section>
+    <section id="reserve"><div class="wrap"><h2>予約までの流れ</h2><div class="flow"><div class="step">希望日時を送る</div><div class="step">症状を簡単に記入</div><div class="step">空き時間を確認</div><div class="step">来院して施術</div></div><a class="btn" href="mailto:sample@example.com?subject=整体院LP制作相談">メールで相談する</a></div></section>
+  </main>
+  <footer><div class="wrap">Sample website by Northstar Web Studio</div></footer>
+</body>
+</html>
